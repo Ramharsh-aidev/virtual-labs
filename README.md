@@ -127,3 +127,5 @@ virtual-labs-website/
 │   ├── tsconfig.node.json
 │   ├── vite.config.ts
 ```
+
+add Gemini API in \src\components\Chatbot\MinimalChatButton.tsx
