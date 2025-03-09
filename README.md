@@ -1,57 +1,129 @@
 virtual-labs-website/
 
 ```plaintext
-├── public/
-│   └── data/
-│       ├── branches.json               # Contains information about the available branches
-│       └── topics/
-│           └── ComputerScience/
-│               ├── AI/
-│               │   ├── AIDepthFirstSearch.json       # Lab details for Depth First Search in AI
-│               │   ├── ConstructionOfBayesianNetwork.json   # Lab details for Bayesian Network Construction
-│               │   ├── GreedyBestFirstSearch.json    # Lab details for Greedy Best First Search
-│               │   ├── InferenceFromBayesianNetwork.json  # Inference in Bayesian Networks
-│               │   ├── MinimaxSearch.json          # Lab details for Minimax Search
-│               │   ├── PolicyIteration.json        # Lab details for Policy Iteration
-│               │   └── QLearning.json              # Lab details for QLearning
-│               └── DataStructures/
-│                   ├── Graphs.json             # Lab details for Graphs
-│                   ├── MinimumSpanningTrees.json  # Lab details for Minimum Spanning Trees
-│                   ├── PathAlgorithms.json       # Lab details for Path Algorithms
-│                   ├── RadixSort.json           # Lab details for Radix Sort
-│                   ├── RedBlackTree.json        # Lab details for Red-Black Trees
-│                   ├── SearchTrees.json         # Lab details for Search Trees
-│                   ├── SelectionSort.json       # Lab details for Selection Sort
-│                   ├── Sorting.json             # Lab details for Sorting algorithms
-│                   ├── Strings.json             # Lab details for String algorithms
-│                   ├── TopologicalSort.json     # Lab details for Topological Sort
-│                   ├── TriesAndSuffixTrees.json # Lab details for Tries and Suffix Trees
-│                   └── TwoThreeTree.json        # Lab details for Two-Three Trees
-├── src/
-│   ├── assets/
-│   │   └── logo.svg                     # The logo of the website
-│   ├── components/
-│   │   ├── BranchDropdown.jsx           # Dropdown component for selecting branches
-│   │   ├── BranchList.jsx               # List component for displaying available branches
-│   │   ├── ContentSection.jsx           # Section component for displaying content
-│   │   ├── HeroSection.jsx              # Hero section with introductory content
-│   │   ├── Layout.jsx                   # Main layout component for the page structure
-│   │   ├── Navbar.jsx                   # Navigation bar component
-│   │   ├── QuestionRenderer.jsx         # Component for rendering questions in labs
-│   │   ├── Sidebar.jsx                  # Sidebar component for additional navigation
-│   │   └── TopicContent.jsx             # Component for displaying content related to topics
-│   ├── pages/
-│   │   ├── AboutPage.jsx                # About page component
-│   │   ├── BranchPage.jsx               # Page for a specific branch of study
-│   │   ├── HomePage.jsx                 # Home page component
-│   │   ├── TermsAndConditionsPage.jsx   # Terms and conditions page
-│   │   └── TopicPage.jsx                # Page for a specific topic in Computer Science
-│   ├── App.jsx                          # Main application entry point
-│   ├── index.css                        # Global CSS styles
-│   └── main.jsx                         # Main entry point for React
-├── index.html                          # Main HTML file
-├── package.json                        # Project dependencies and scripts
-├── postcss.config.js                   # PostCSS configuration file
-├── tailwind.config.js                  # Tailwind CSS configuration file
-└── vite.config.js                      # Vite configuration file for the build tool
+├── public
+│   ├── placeholder.svg
+│
+├── src
+│   ├── components
+│   │   ├── animations
+│   │   │   ├── BinarySearchAnimation.tsx
+│   │   │   ├── DijkstrasAlgorithmAnimation.tsx
+│   │   │   ├── GreedyBestFirstSearchAnimation.tsx
+│   │   │   ├── LinkedListAnimation.tsx
+│   │   │   ├── MinimumSpanningTreeAnimation.tsx
+│   │   │   ├── SelectionSortAnimation.tsx
+│   │   │   ├── StackAnimation.tsx
+│   │   │
+│   │   ├── Chatbot
+│   │   │   ├── ChatbotButton.tsx
+│   │   │   ├── ChatbotWithAI.tsx
+│   │   │   ├── MinimalChatButton.tsx
+│   │   │
+│   │   ├── home
+│   │   │   ├── AlgorithmsSection.tsx
+│   │   │   ├── AnnouncementsSection.tsx
+│   │   │   ├── EngineeringFieldsSection.tsx
+│   │   │   ├── FooterSection.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── TestimonialsSection.tsx
+│   │   │
+│   │   ├── ui
+│   │       ├── accordion.tsx
+│   │       ├── alert-dialog.tsx
+│   │       ├── alert.tsx
+│   │       ├── aspect-ratio.tsx
+│   │       ├── avatar.tsx
+│   │       ├── badge.tsx
+│   │       ├── breadcrumb.tsx
+│   │       ├── button.tsx
+│   │       ├── calendar.tsx
+│   │       ├── card.tsx
+│   │       ├── carousel.tsx
+│   │       ├── chart.tsx
+│   │       ├── checkbox.tsx
+│   │       ├── collapsible.tsx
+│   │       ├── command.tsx
+│   │       ├── context-menu.tsx
+│   │       ├── dialog.tsx
+│   │       ├── drawer.tsx
+│   │       ├── dropdown-menu.tsx
+│   │       ├── form.tsx
+│   │       ├── hover-card.tsx
+│   │       ├── input-otp.tsx
+│   │       ├── input.tsx
+│   │       ├── label.tsx
+│   │       ├── menubar.tsx
+│   │       ├── navigation-menu.tsx
+│   │       ├── pagination.tsx
+│   │       ├── popover.tsx
+│   │       ├── progress.tsx
+│   │       ├── radio-group.tsx
+│   │       ├── resizable.tsx
+│   │       ├── scroll-area.tsx
+│   │       ├── select.tsx
+│   │       ├── separator.tsx
+│   │       ├── sheet.tsx
+│   │       ├── sidebar.tsx
+│   │       ├── skeleton.tsx
+│   │       ├── slider.tsx
+│   │       ├── sonner.tsx
+│   │       ├── switch.tsx
+│   │       ├── table.tsx
+│   │       ├── tabs.tsx
+│   │       ├── textarea.tsx
+│   │       ├── toast.tsx
+│   │       ├── toaster.tsx
+│   │       ├── toggle-group.tsx
+│   │       ├── toggle.tsx
+│   │       ├── tooltip.tsx
+│   │       ├── use-toast.ts
+│   │
+│   │   ├── AlgorithmCard.tsx
+│   │   ├── Map.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── ParticipatingInstitutes.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── TestQuestions.tsx
+│
+│   ├── data
+│   │   ├── topics.ts
+│
+│   ├── hooks
+│   │   ├── use-mobile.tsx
+│   │   ├── use-toast.ts
+│
+│   ├── lib
+│   │   ├── utils.ts
+│
+│   ├── pages
+│   │   ├── AboutPage.tsx
+│   │   ├── AlgorithmDetail.tsx
+│   │   ├── ComputerSciencePage.tsx
+│   │   ├── ElectricalEngineeringPage.tsx
+│   │   ├── Index.tsx
+│   │   ├── MechanicalEngineeringPage.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── TermsPage.tsx
+│   │   ├── TopicDetailPage.tsx
+│   │
+│   ├── services
+│   │   ├── gemini.ts
+│
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── .gitignore
+│   ├── components.json
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   ├── vite.config.ts
 ```
